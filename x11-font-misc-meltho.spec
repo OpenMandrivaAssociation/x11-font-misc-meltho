@@ -3,6 +3,7 @@ Version: 1.0.0
 Release: %mkrel 5
 Summary: Xorg X11 font misc-meltho
 Group: Development/X11
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL: http://xorg.freedesktop.org
 Source: http://xorg.freedesktop.org/releases/individual/font/font-misc-meltho-%{version}.tar.bz2
 License: CHECK
