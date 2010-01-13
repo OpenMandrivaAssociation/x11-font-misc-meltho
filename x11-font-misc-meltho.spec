@@ -1,6 +1,6 @@
 Name: x11-font-misc-meltho
-Version: 1.0.0
-Release: %mkrel 6
+Version: 1.0.1
+Release: %mkrel 1
 Summary: Xorg X11 font misc-meltho
 Group: Development/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -23,8 +23,8 @@ Xorg X11 font misc-meltho
 %setup -q -n font-misc-meltho-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir} --with-fontdir=%_datadir/fonts/OTF
+./configure --prefix=/usr --x-includes=%{_includedir}\
+	    --x-libraries=%{_libdir} --with-fontdir=%_datadir/fonts/OTF
 
 %make
 
