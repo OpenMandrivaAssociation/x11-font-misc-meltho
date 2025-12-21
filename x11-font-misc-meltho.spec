@@ -9,6 +9,11 @@ Source: http://xorg.freedesktop.org/releases/individual/font/font-misc-meltho-%{
 # We may not modify the software!
 License: Meltho Font License
 BuildArch: noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: x11-font-util >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.2
 BuildRequires: fontconfig 
